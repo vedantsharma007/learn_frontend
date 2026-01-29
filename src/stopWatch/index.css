@@ -1,0 +1,39 @@
+#heading{
+    text-align: center;
+    font-size: 50px;
+
+}
+#buttons{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+#start{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 0 10px;
+    background-color: rgb(67, 180, 67);
+}
+#stop{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 0 10px;
+    background-color: rgb(255, 67, 67);
+}
+#resume{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 0 10px;
+    background-color: yellow;
+}
+#timer{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+body{
+    background-color: #7ba7bc;
+}
