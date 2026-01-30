@@ -1,0 +1,105 @@
+/* ---------- Theme variables ---------- */
+:root {
+  --bg: #f0f0f0;
+  --text: #111;
+  --card: #ffffff;
+  --nav: #f4f4f4;
+  --link: #007BFF;
+  --border: #e5e7eb;
+}
+
+/* Dark theme overrides */
+body.dark {
+  --bg: #0b1220;
+  --text: #e5e7eb;
+  --card: #293c65;
+  --nav: #0f172a;
+  --link: #60a5fa;
+  --border: aqua; /* 👈 aqua ONLY in dark */
+}
+
+/* ---------- Base styles ---------- */
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+/* ---------- Navbar ---------- */
+#navbar {
+  width: 95%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--nav);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---------- Sections ---------- */
+#about,
+#Education,
+#Skills,
+#Projects,
+#Contact {
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black; /* default = no border */
+}
+
+/*  Aqua border ONLY in dark mode */
+body.dark #about,
+body.dark #Education,
+body.dark #Skills,
+body.dark #Projects,
+body.dark #Contact {
+  border: 2px solid aqua;
+  animation: aquaGlow 2.5s infinite ease-in-out;
+}
+
+/* ---------- Intro ---------- */
+#photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 120px auto 0;
+}
+
+#Intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ---------- Theme toggle ---------- */
+#themeToggle {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+/* ---------- Animations ---------- */
+/* animations with help of ai */
+@keyframes aquaGlow {
+  0% {
+    box-shadow: 0 0 6px rgba(0, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(0, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 6px rgba(0, 255, 255, 0.4);
+  }
+}
+
+
